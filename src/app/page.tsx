@@ -8,7 +8,14 @@ export default function Home() {
   const [language, setLanguage] = useState("en");
   const [menuOpen, setMenuOpen] = useState(false);
   const items = [
-    { slug: "work1", title: language === "en" ? "Project One" : "動畫作品一", thumbnail: "/thumb/thumb1.jpg", desc: language === "en" ? "A cinematic short made with Blender." : "使用 Blender 製作的電影短片。" },
+    { 
+      slug: "work1",
+      title: language === "en" ? "Sunset Motion" : "日落動態",
+      thumbnail: "/thumb/thumb1.jpg",
+      desc: language === "en"
+        ? "Short loop animation inspired by sunsets."
+        : "靈感來自夕陽的短循環動畫。"
+    },
     { slug: "work2", title: language === "en" ? "Project Two" : "動畫作品二", thumbnail: "/thumb/thumb2.jpg", desc: language === "en" ? "UI motion prototype using AE." : "使用 AE 的 UI 動效範例。" },
     { slug: "work3", title: language === "en" ? "Project Three" : "動畫作品三", thumbnail: "/thumb/thumb3.jpg", desc: language === "en" ? "Logo reveal animation for client." : "為客戶設計的 Logo 揭示動畫。" },
     { slug: "work4", title: language === "en" ? "Project Four" : "動畫作品四", thumbnail: "/thumb/thumb4.jpg", desc: language === "en" ? "Music visualizer loop design." : "音樂視覺化循環動畫設計。" },
